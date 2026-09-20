@@ -35,17 +35,17 @@ h1 .signature em { font-family:inherit; font-style:normal; }
 .research-list p { max-width:650px; margin:0; color:var(--muted); }
 .publications { color:var(--paper); background:var(--ink); box-shadow:0 0 0 100vmax var(--ink); clip-path:inset(0 -100vmax); border-bottom:0; }
 .section-content>.publication-title { max-width:none; font-family:"Instrument Serif",Georgia,serif; font-size:clamp(5rem,13vw,13rem); line-height:.72; letter-spacing:-.055em; font-weight:400; font-style:italic; }
-.publication-gallery { margin-top:clamp(90px,11vw,160px); }
-.publication-feature { padding:0 0 clamp(90px,10vw,150px); }
-.publication-feature+ .publication-feature { padding-top:clamp(80px,9vw,130px); border-top:1px solid rgba(255,255,255,.28); }
-.publication-feature figure { position:relative; margin:0; padding:clamp(20px,3.6vw,54px); overflow:hidden; background:#fff; border-left:7px solid var(--blue); }
+.publication-gallery { margin-top:clamp(80px,9vw,125px); }
+.publication-feature { display:grid; grid-template-columns:minmax(290px,.78fr) minmax(460px,1.22fr); gap:clamp(50px,7vw,110px); align-items:center; padding:0 0 clamp(70px,8vw,105px); }
+.publication-feature+ .publication-feature { padding-top:clamp(70px,8vw,105px); border-top:1px solid rgba(255,255,255,.28); }
+.publication-feature figure { position:relative; margin:0; padding:clamp(14px,2vw,26px); overflow:hidden; background:#fff; border-left:5px solid var(--blue); }
 .publication-feature figure::after { content:""; position:absolute; inset:auto 0 0; height:4px; background:var(--blue); transform:scaleX(0); transform-origin:left; transition:transform .45s ease; }
 .publication-feature:hover figure::after { transform:scaleX(1); }
-.publication-feature img { display:block; width:100%; max-height:560px; object-fit:contain; }
-.publication-copy { display:grid; grid-template-columns:minmax(0,1fr) 180px; gap:clamp(32px,6vw,100px); align-items:end; margin-top:35px; }
+.publication-feature img { display:block; width:100%; height:clamp(210px,22vw,330px); object-fit:contain; }
+.publication-copy { display:flex; min-width:0; flex-direction:column; justify-content:space-between; align-self:stretch; padding:8px 0; }
 .publication-venue { margin:0 0 18px; color:#8aa4ff; font-family:"Inter",Arial,sans-serif; font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
-.publication-feature h3 { max-width:1050px; margin:0; font-family:"Instrument Serif",Georgia,serif; font-size:clamp(2rem,4.35vw,4.6rem); line-height:.98; letter-spacing:-.032em; font-weight:400; }
-.publication-authors { margin:0 0 7px; padding-top:12px; border-top:1px solid rgba(255,255,255,.4); color:#a5a5a1; font-family:"Inter",Arial,sans-serif; font-size:.82rem; }
+.publication-feature h3 { max-width:680px; margin:0; font-family:"Instrument Serif",Georgia,serif; font-size:clamp(2rem,3.25vw,3.55rem); line-height:1.02; letter-spacing:-.028em; font-weight:400; }
+.publication-authors { max-width:180px; margin:42px 0 0; padding-top:12px; border-top:1px solid rgba(255,255,255,.4); color:#a5a5a1; font-family:"Inter",Arial,sans-serif; font-size:.82rem; }
 .publication-authors strong { color:var(--paper); font-weight:600; }
 .contact { padding:130px 0 55px; }
 .contact>p { margin:0 0 28px; color:var(--muted); font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
@@ -77,12 +77,13 @@ footer a { color:var(--ink); text-decoration:none; font-weight:700; }
   .research-list p { grid-column:2; }
   .section-content>.publication-title { font-size:23vw; }
   .publication-gallery { margin-top:70px; }
-  .publication-feature { padding-bottom:80px; }
+  .publication-feature { grid-template-columns:1fr; gap:30px; padding-bottom:80px; }
   .publication-feature+ .publication-feature { padding-top:70px; }
   .publication-feature figure { padding:14px 10px; border-left-width:4px; }
-  .publication-copy { grid-template-columns:1fr; gap:28px; margin-top:25px; }
+  .publication-feature img { height:auto; max-height:300px; }
+  .publication-copy { padding:0; }
   .publication-feature h3 { font-size:clamp(2.15rem,10vw,3.4rem); }
-  .publication-authors { max-width:180px; }
+  .publication-authors { margin-top:28px; }
   .contact>a { font-size:12.5vw; }
   .desktop-break { display:none; }
   .contact-meta { grid-template-columns:1fr; gap:8px; margin-top:54px; }
