@@ -9,14 +9,14 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232351ff'/%3E%3Cpath d='M17 15h15c12 0 19 7 19 17S44 49 32 49H17V15Zm10 9v16h5c6 0 9-3 9-8s-3-8-9-8h-5Z' fill='white'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header">
     <a class="identity" href="#top" aria-label="Dapei Chen, home"><span class="identity-mark">DC</span><span>Dapei Chen</span></a>
-    <nav aria-label="Primary navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="mailto:chandapei463@gmail.com">Email ↗</a></nav>
+    <nav aria-label="Primary navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="mailto:chandapei463@gmail.com">Email ↗</a></nav>
   </header>
   <main id="content">
     <section class="hero page" id="top">
@@ -27,7 +27,6 @@
     </section>
     <div class="ticker" aria-hidden="true"><span>SPATIOTEMPORAL LEARNING</span><span>GEOAI</span><span>EARTH & ENVIRONMENTAL SYSTEMS</span></div>
     <section class="section page" id="research">
-      <div class="section-label"><span>01</span><span>Research profile</span></div>
       <div class="section-content">
         <h2>Learning from places that are difficult to observe.</h2>
         <p class="standfirst">My research asks how models can transfer evidence across space, represent physical interactions, and describe more than one possible future.</p>
@@ -39,48 +38,22 @@
       </div>
     </section>
     <section class="section page publications" id="publications">
-      <div class="section-label"><span>02</span><span>Selected outputs</span></div>
       <div class="section-content">
-        <div class="publication-heading">
-          <h2>Publications</h2>
-          <p><strong>03</strong> peer-reviewed papers<br><strong>01</strong> granted patent</p>
+        <h2 class="publication-title">Publications</h2>
+        <div class="publication-gallery">
+          <article class="publication-feature">
+            <figure><img src="evidiff-framework.png" alt="EviDiff-ST model framework showing source refinement, evidence propagation, and adaptive readout"></figure>
+            <div class="publication-copy"><div><p class="publication-venue">ACM SIGSPATIAL GeoAI · 2026</p><h3>EviDiff-ST: Reconstruction-Free Spatiotemporal Forecasting over Unobserved Regions</h3></div><p class="publication-authors"><strong>D. Chen</strong>, et al.</p></div>
+          </article>
+          <article class="publication-feature">
+            <figure><img src="fcm-framework.png" alt="Future Contingency Mining framework showing candidate futures, branching outcomes, and evidence-driven revision"></figure>
+            <div class="publication-copy"><div><p class="publication-venue">IEEE ICDM BlueSky Track · 2026</p><h3>The Future Is Not One Sequence: A BlueSky Agenda for Future Contingency Mining</h3></div><p class="publication-authors"><strong>D. Chen</strong>, et al.</p></div>
+          </article>
+          <article class="publication-feature">
+            <figure><img src="trest-framework.png" alt="TReST model framework with trend-guided baseline and residual spatiotemporal branches"></figure>
+            <div class="publication-copy"><div><p class="publication-venue">PRICAI · 2026</p><h3>TReST: Trend-Guided Residual Spatio-Temporal Modeling for Traffic Forecasting</h3></div><p class="publication-authors"><strong>D. Chen</strong>, et al.</p></div>
+          </article>
         </div>
-        <div class="publication-list">
-          <article class="publication"><span class="publication-number">01</span><div class="publication-main"><h3>TReST: Trend-Guided Residual Spatio-Temporal Modeling for Traffic Forecasting</h3><p><strong>D. Chen</strong>, et al.</p></div><div class="publication-meta"><span>PRICAI</span><span>2026</span><strong>Accepted</strong></div></article>
-          <article class="publication"><span class="publication-number">02</span><div class="publication-main"><h3>The Future Is Not One Sequence: A BlueSky Agenda for Future Contingency Mining</h3><p><strong>D. Chen</strong>, et al.</p></div><div class="publication-meta"><span>IEEE ICDM · BlueSky Track</span><span>2026</span><strong>Accepted</strong></div></article>
-          <article class="publication"><span class="publication-number">03</span><div class="publication-main"><h3>EviDiff-ST: Reconstruction-Free Spatiotemporal Forecasting over Unobserved Regions</h3><p><strong>D. Chen</strong>, et al.</p></div><div class="publication-meta"><span>ACM SIGSPATIAL · GeoAI</span><span>2026</span><strong>Accepted</strong></div></article>
-          <article class="publication patent"><span class="publication-number">P1</span><div class="publication-main"><h3>Traffic Flow Prediction Method and System Based on Interpretable Graphs and a Multi-Scale Temporal Backbone</h3><p><strong>D. Chen</strong>, et al.</p></div><div class="publication-meta"><span>Chinese Invention Patent</span><span>CN121456830B</span><strong>Granted</strong></div></article>
-        </div>
-      </div>
-    </section>
-    <section class="section page" id="experience">
-      <div class="section-label"><span>03</span><span>Experience</span></div>
-      <div class="section-content">
-        <h2>Research, end to end.</h2>
-        <div class="timeline">
-          <article><time>Dec 2025 — Present</time><div><h3>Student Research Assistant</h3><p class="institution">Xiangjiang Laboratory · Smart City and Urban Computing Research Group</p><p>GeoAI and spatiotemporal learning for urban and environmental systems, spanning data preparation, benchmark reproduction, model development, robustness analysis, and geospatial visualization.</p></div></article>
-          <article><time>Jun 2026 — Present</time><div><h3>GeoAI for Complex Spatial Systems</h3><p>Leading EviDiff-ST and AirScan for unobserved-region forecasting and irregular air-quality monitoring networks.</p></div></article>
-          <article><time>Jan 2024 — Aug 2026</time><div><h3>Urban Traffic Forecasting</h3><p>Developed TReST and PriSM, and constructed a real-world traffic-flow dataset from 88 sensors.</p></div></article>
-        </div>
-      </div>
-    </section>
-    <section class="section page education" id="education">
-      <div class="section-label"><span>04</span><span>Education</span></div>
-      <div class="section-content education-grid">
-        <div><h2>Hunan University of Technology and Business</h2><p>B.Eng. in Artificial Intelligence, Honors Program<br>Expected June 2027 · Changsha, China</p></div>
-        <dl><div><dt>GPA</dt><dd>3.415 / 4.0</dd></div><div><dt>Average</dt><dd>86.6 / 100</dd></div><div><dt>Rank</dt><dd>26 / 337 · Top 7.7%</dd></div></dl>
-      </div>
-    </section>
-    <section class="section page" id="recognition">
-      <div class="section-label"><span>05</span><span>Recognition</span></div>
-      <div class="section-content">
-        <h2>Selected awards</h2>
-        <ol class="award-list">
-          <li><span>2026</span><strong>National Second Prize</strong><span>RAICOM Robotics Developer Competition</span></li>
-          <li><span>2025</span><strong>Second Place</strong><span>Global Campus AI Algorithm Elite Challenge</span></li>
-          <li><span>2025</span><strong>National Third Prize</strong><span>China Robotics and Artificial Intelligence Competition</span></li>
-          <li><span>2025</span><strong>Provincial First Prize</strong><span>China Undergraduate Mathematical Modeling Contest</span></li>
-        </ol>
       </div>
     </section>
     <section class="contact page" id="contact">
