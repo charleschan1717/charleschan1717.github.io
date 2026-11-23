@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -39,10 +40,12 @@
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
+
   <header class="site-header">
     <a class="identity" href="#top" aria-label="dapeichen, home"><span class="identity-mark">dc</span><span>dapeichen</span></a>
     <nav aria-label="Primary navigation"><a href="#profile">Profile</a><a href="#publications">Publications</a><a href="mailto:chandapei463@gmail.com">Email ↗</a></nav>
   </header>
+
   <main id="content">
     <section class="hero page" id="top">
       <h1><span>Dapei</span><span class="signature">Chen<em>.</em></span></h1>
@@ -51,7 +54,9 @@
         <p class="hero-verse">Joshua 1:9</p>
       </div>
     </section>
+
     <div class="ticker" aria-hidden="true"><span>SPATIOTEMPORAL LEARNING</span><span>GEOAI</span><span>EARTH & ENVIRONMENTAL SYSTEMS</span></div>
+
     <section class="profile page" id="profile">
       <aside class="profile-side">
         <div class="portrait-frame"><img src="a82676094e54724085ed4c7065859d15.jpg" alt="Dapei Chen at Sun Yat-sen Memorial Hall"></div>
@@ -61,65 +66,95 @@
           </dl>
         </div>
       </aside>
+
       <div class="profile-main">
         <div class="profile-name-row"><h2>Dapei Chen<span>.</span></h2><p lang="zh-CN">陈达沛</p></div>
         <p class="profile-lead">I am a senior undergraduate student majoring in Artificial Intelligence at <a href="https://www.hutb.edu.cn/" target="_blank" rel="noopener">Hunan University of Technology and Business</a>, advised by Bo Wu</a>. I also work as a Student Research Assistant at Xiangjiang Laboratory</a>.</p>
         <p class="profile-body">My research focuses on spatiotemporal learning and GeoAI. I am interested in modeling geographic structure, physical interactions, and multiple plausible futures for urban and environmental systems. My first-author work has appeared at PRICAI 2026, the IEEE ICDM 2026 BlueSky Track, and ACM SIGSPATIAL 2026 GeoAI.</p>
+
         <div class="profile-links" aria-label="Profile links">
           <a href="mailto:chandapei463@gmail.com">Email <span>↗</span></a>
           <a href="https://github.com/charleschan1717" target="_blank" rel="noopener">GitHub <span>↗</span></a>
           <a href="https://www.linkedin.com/in/dapei-chen-5669633b3/" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
         </div>
+
         <div class="profile-interests"><span>Spatiotemporal Learning</span><span>GeoAI</span><span>AI for Earth</span></div>
       </div>
     </section>
+
     <section class="section page publications" id="publications">
       <div class="section-content">
         <h2 class="publication-title">Publications</h2>
-        <div class="publication-gallery">
-          <article class="publication-feature">
-            <div class="publication-copy"><div><p class="publication-venue">PRICAI · 2026</p><h3>TReST: Trend-Guided Residual Spatio-Temporal Modeling for Traffic Forecasting</h3></div><p class="publication-authors"><strong>D. Chen</strong>, et al.</p></div>
-            <figure><img src="trest-framework.png" alt="TReST model framework with trend-guided baseline and residual spatiotemporal branches"></figure>
-          </article>
-          <article class="publication-feature">
-            
-    <div class="publication-copy">
-      <div>
-        <p class="publication-venue">ACM SIGSPATIAL GeoAI · 2026</p>
-        <h3>
-          <a href="https://doi.org/10.1145/3849726.3856100"
-             target="_blank"
-             rel="noopener noreferrer"
-             style="color: inherit; text-decoration: none;">
-            EviDiff-ST: Reconstruction-Free Spatiotemporal Forecasting over Unobserved Regions
-          </a>
-        </h3>
-        <p class="publication-doi">
-          <a href="https://doi.org/10.1145/3849726.3856100"
-             target="_blank"
-             rel="noopener noreferrer">
-            DOI: 10.1145/3849726.3856100 ↗
-          </a>
-        </p>
-      </div>
-      <p class="publication-authors"><strong>D. Chen</strong>, et al.</p>
-    </div>
 
-            <figure><img src="evidiff-framework.png" alt="EviDiff-ST model framework showing source refinement, evidence propagation, and adaptive readout"></figure>
-          </article>
+        <div class="publication-gallery">
+
+          <!-- 1. EviDiff-ST -->
           <article class="publication-feature">
-            <div class="publication-copy"><div><p class="publication-venue">IEEE ICDM BlueSky Track · 2026</p><h3>The Future Is Not One Sequence: A BlueSky Agenda for Future Contingency Mining</h3></div><p class="publication-authors"><strong>D. Chen*</strong>, et al.</p></div>
-            <figure><img src="fcm-framework.png" alt="Future Contingency Mining framework showing candidate futures, branching outcomes, and evidence-driven revision"></figure>
+            <div class="publication-copy">
+              <div>
+                <p class="publication-venue">ACM SIGSPATIAL GeoAI · 2026</p>
+                <h3>
+                  <a href="https://doi.org/10.1145/3849726.3856100"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     style="color: inherit; text-decoration: none;">
+                    EviDiff-ST: Reconstruction-Free Spatiotemporal Forecasting over Unobserved Regions
+                  </a>
+                </h3>
+                <p class="publication-doi">
+                  <a href="https://doi.org/10.1145/3849726.3856100"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    DOI: 10.1145/3849726.3856100 ↗
+                  </a>
+                </p>
+              </div>
+              <p class="publication-authors"><strong>D. Chen</strong>, et al.</p>
+            </div>
+            <figure>
+              <img src="evidiff-framework.png" alt="EviDiff-ST model framework showing source refinement, evidence propagation, and adaptive readout">
+            </figure>
           </article>
+
+          <!-- 2. TReST -->
+          <article class="publication-feature">
+            <div class="publication-copy">
+              <div>
+                <p class="publication-venue">PRICAI · 2026</p>
+                <h3>TReST: Trend-Guided Residual Spatio-Temporal Modeling for Traffic Forecasting</h3>
+              </div>
+              <p class="publication-authors"><strong>D. Chen</strong>, et al.</p>
+            </div>
+            <figure>
+              <img src="trest-framework.png" alt="TReST model framework with trend-guided baseline and residual spatiotemporal branches">
+            </figure>
+          </article>
+
+          <!-- 3. ICDM BlueSky -->
+          <article class="publication-feature">
+            <div class="publication-copy">
+              <div>
+                <p class="publication-venue">IEEE ICDM BlueSky Track · 2026</p>
+                <h3>The Future Is Not One Sequence: A BlueSky Agenda for Future Contingency Mining</h3>
+              </div>
+              <p class="publication-authors"><strong>D. Chen*</strong>, et al.</p>
+            </div>
+            <figure>
+              <img src="fcm-framework.png" alt="Future Contingency Mining framework showing candidate futures, branching outcomes, and evidence-driven revision">
+            </figure>
+          </article>
+
         </div>
       </div>
     </section>
+
     <section class="contact page" id="contact">
       <p>For research conversations and collaboration</p>
       <a href="mailto:chandapei463@gmail.com">chandapei463<br class="desktop-break">@gmail.com</a>
       <div class="contact-meta"><a href="https://github.com/charleschan1717" target="_blank" rel="noopener">GitHub ↗</a><span>Chinese · English</span><span>Last updated September 2026</span></div>
     </section>
   </main>
+
   <footer class="page"><span>© 2026 dapeichen</span><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>
